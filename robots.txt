@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ictAmine.github.io/50h50ai_site/sitemap.xml
