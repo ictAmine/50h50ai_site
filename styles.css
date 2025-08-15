@@ -6,9 +6,9 @@
   --max:1100px;
 }
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:linear-gradient(180deg,#0a0b10, #0e1016);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu}
+html,body{margin:0;padding:0;background:linear-gradient(180deg,#0a0b10,#0e1016);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu}
 a{color:inherit;text-decoration:none}
-img{display:block}
+img{display:block;max-width:100%;height:auto}
 h1,h2,h3{line-height:1.2;margin:0 0 10px}
 p{margin:0 0 10px}
 .muted{color:var(--muted)}
@@ -48,15 +48,15 @@ button.ghost,.btn.ghost{background:transparent;border:1px solid var(--border);pa
 .checklist li{margin:6px 0}
 .note{color:var(--muted);margin-top:10px}
 
-.steps{counter-reset: s}
+.steps{counter-reset:s}
 .steps li{margin:8px 0;padding-left:8px;position:relative}
 .steps li::before{counter-increment:s;content: counter(s) ".";position:absolute;left:-18px;color:var(--primary)}
 
 .list-head{max-width:var(--max);margin:60px auto 10px;padding:0 16px;display:flex;justify-content:space-between;align-items:end}
 .cards{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);max-width:var(--max);margin:0 auto 20px;padding:0 16px}
 @media (max-width:900px){.cards{grid-template-columns:1fr}}
-.p-card .thumb{height:160px;border-radius:14px;background:linear-gradient(135deg, var(--primary-10), rgba(255,255,255,.04))}
-.skeleton{animation: pulse 1.6s infinite ease-in-out}
+.p-card .thumb{height:160px;border-radius:14px;background:linear-gradient(135deg,var(--primary-10),rgba(255,255,255,.04))}
+.skeleton{animation:pulse 1.6s infinite ease-in-out}
 @keyframes pulse{0%{opacity:.7}50%{opacity:1}100%{opacity:.7}}
 
 .pricing{max-width:var(--max);margin:50px auto;padding:0 16px}
@@ -71,3 +71,11 @@ button.ghost,.btn.ghost{background:transparent;border:1px solid var(--border);pa
 input,textarea{background:#0f1318;border:1px solid var(--border);border-radius:12px;padding:10px;color:var(--text)}
 input:focus,textarea:focus{outline:2px solid var(--primary-10);border-color:var(--primary)}
 .foot{border-top:1px solid var(--border);padding:24px 16px;text-align:center;color:var(--muted)}
+
+/* WhatsApp floating button */
+.wa-fab{
+  position:fixed;right:16px;bottom:16px;background:var(--primary);
+  color:#062a1b;border-radius:999px;padding:10px 14px;font-weight:800;
+  box-shadow:var(--shadow)
+}
+.wa-fab:hover{transform:translateY(-1px)}

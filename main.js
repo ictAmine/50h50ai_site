@@ -1,22 +1,15 @@
 // Año dinámico
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Envío simulado del formulario (puedes cambiarlo por fetch a tu backend)
-const form = document.getElementById('leadForm');
-const status = document.getElementById('formStatus');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const data = Object.fromEntries(new FormData(form).entries());
-  // Aquí podrías hacer fetch('/api/lead', {method:'POST', body: JSON.stringify(data)})
-  status.textContent = '✅ Recibido. Te contactamos en 24h.';
-  form.reset();
-});
-
-// i18n mínimo (ES/EN/NL)
+// i18n ES/EN/NL
 const i18n = {
   ES: {
+    nav_services: "Servicios",
+    nav_portfolio: "Portafolio",
+    nav_pricing: "Precios",
+    nav_contact: "Contacto",
     hero_title: "Websites a medida: 50% humano, 50% inteligencia artificial",
-    hero_sub: "Diseño con alma. Datos con cerebro. Entregamos sitios rápidos, elegantes y listos para vender.",
+    hero_sub: "Diseño con alma. Datos con cerebro. Sitios rápidos, elegantes y listos para vender.",
     cta_primary: "Pide tu demo",
     cta_secondary: "Ver trabajos",
     svc_title: "Servicios",
@@ -46,6 +39,10 @@ const i18n = {
     foot_line: "Hecho con café y algoritmos."
   },
   EN: {
+    nav_services: "Services",
+    nav_portfolio: "Portfolio",
+    nav_pricing: "Pricing",
+    nav_contact: "Contact",
     hero_title: "Bespoke websites: 50% human, 50% AI",
     hero_sub: "Design with soul. Data with brains. Fast, elegant, sales-ready sites.",
     cta_primary: "Request a demo",
@@ -77,19 +74,23 @@ const i18n = {
     foot_line: "Built with coffee and algorithms."
   },
   NL: {
-    hero_title: "Maatwerk websites: 50% mens, 50% AI",
+    nav_services: "Diensten",
+    nav_portfolio: "Portfolio",
+    nav_pricing: "Prijzen",
+    nav_contact: "Contact",
+    hero_title: "Maatwerk websites: 50% mens, 50% kunstmatige intelligentie",
     hero_sub: "Design met ziel. Data met hersens. Razendsnelle, elegante sites die verkopen.",
     cta_primary: "Vraag een demo aan",
     cta_secondary: "Werk bekijken",
     svc_title: "Diensten",
-    svc_1: "Maatwerk (landing, e-commerce, dashboard).",
+    svc_1: "Maatwerk websites (landing, e-commerce, dashboard).",
     svc_2: "AI-automatisering (chatbots, e-mails, assistenten).",
     svc_3: "Performance & SEO (Core Web Vitals, schema, metadata).",
-    svc_4: "Onderhoud (hosting, backups, verbeteringen).",
-    svc_note: "“Op jouw smaak gemaakt, zonder rigide templates.”",
+    svc_4: "Onderhoud (hosting, back-ups, verbeteringen).",
+    svc_note: "“Op jouw smaak gemaakt. Geen rigide templates.”",
     how_title: "Onze werkwijze",
     how_1: "Briefing 15’ (doel & stijl).",
-    how_2: "Snel wireframe + AI-copy.",
+    how_2: "Snelle wireframe + AI-copy.",
     how_3: "Live design + menselijke review.",
     how_4: "Oplevering + analytics.",
     pf_title: "Portfolio",
@@ -109,9 +110,9 @@ const i18n = {
   }
 };
 
-const $ = (sel) => document.querySelectorAll(`[data-i18n="${sel}"]`);
 const switchBtn = document.getElementById('langSwitch');
-let lang = 'ES';
+let lang = 'NL';
+
 function applyLang(l){
   const dict = i18n[l];
   document.querySelectorAll('[data-i18n]').forEach(el=>{
@@ -120,10 +121,10 @@ function applyLang(l){
   });
   switchBtn.textContent = l;
 }
+
 switchBtn.addEventListener('click', ()=>{
   lang = lang === 'ES' ? 'EN' : (lang === 'EN' ? 'NL' : 'ES');
   applyLang(lang);
 });
+
 applyLang(lang);
-
-

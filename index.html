@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="nl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>50% Humano · 50% IA — Websites a medida</title>
-  <meta name="description" content="Creamos webs a medida combinando intuición humana y precisión de IA. Rápidas, elegantes y orientadas a negocio."/>
-  <link rel="preload" href="styles.css" as="style" />
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="main.js"></script>
+
+  <title>50/50 Web Studio — Maatwerk websites met AI</title>
+  <meta name="description" content="Maatwerk websites die verkopen: 50% mens, 50% AI. Snel, elegant en zakelijk gericht. Gemaakt in Nederland." />
+  <link rel="canonical" href="https://ictAmine.github.io/50h50ai_site/" />
+
+  <!-- Favicon & OG -->
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="50/50 Web Studio — Websites a medida con IA">
-  <meta property="og:description" content="Diseño con alma. Datos con cerebro. Sitios rápidos, elegantes y listos para vender.">
+  <meta property="og:title" content="50/50 Web Studio — Maatwerk websites met AI">
+  <meta property="og:description" content="Design met ziel. Data met hersens. Razendsnelle, elegante sites die verkopen.">
   <meta property="og:url" content="https://ictAmine.github.io/50h50ai_site/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="main.js"></script>
 </head>
 <body>
   <header class="nav">
@@ -22,156 +27,180 @@
       <span>50/50 Web Studio</span>
     </a>
     <nav class="menu" aria-label="Primary">
-      <a href="#servicios">Servicios</a>
-      <a href="#portafolio">Portafolio</a>
-      <a href="#precios">Precios</a>
-      <a href="#contacto" class="cta">Contacto</a>
-      <button id="langSwitch" class="ghost" aria-label="Cambiar idioma">ES</button>
+      <a href="#servicios" data-i18n="nav_services">Diensten</a>
+      <a href="#portafolio" data-i18n="nav_portfolio">Portfolio</a>
+      <a href="#precios" data-i18n="nav_pricing">Prijzen</a>
+      <a href="#contacto" class="cta" data-i18n="nav_contact">Contact</a>
+      <button id="langSwitch" class="ghost" aria-label="Taal wisselen">NL</button>
     </nav>
   </header>
 
   <section class="hero" id="home">
     <div class="hero-inner">
       <h1 data-i18n="hero_title">
-        Websites a medida: 50% humano, 50% inteligencia artificial
+        Maatwerk websites: 50% mens, 50% kunstmatige intelligentie
       </h1>
       <p class="lead" data-i18n="hero_sub">
-        Diseño con alma. Datos con cerebro. Entregamos sitios rápidos, elegantes y listos para vender.
+        Design met ziel. Data met hersens. Razendsnelle, elegante sites die verkopen.
       </p>
       <div class="hero-cta">
-        <a href="#contacto" class="btn" data-i18n="cta_primary">Pide tu demo</a>
-        <a href="#portafolio" class="btn ghost" data-i18n="cta_secondary">Ver trabajos</a>
+        <a href="#contacto" class="btn" data-i18n="cta_primary">Vraag een demo aan</a>
+        <a href="#portafolio" class="btn ghost" data-i18n="cta_secondary">Werk bekijken</a>
+        <a href="https://calendly.com/TU_CALENDLY/15min" target="_blank" rel="noopener" class="btn ghost">15 min intake</a>
       </div>
       <ul class="badges">
-        <li>SEO técnico</li>
-        <li>Rendimiento 90+ Lighthouse</li>
-        <li>Accesibilidad</li>
-        <li>Integración IA</li>
+        <li>Technische SEO</li>
+        <li>Lighthouse 90+</li>
+        <li>Toegankelijkheid</li>
+        <li>AI-integratie</li>
       </ul>
+      <p class="muted" style="margin-top:10px">
+        Gemaakt in Nederland · Wij spreken NL / EN / ES / AR / FR
+      </p>
     </div>
   </section>
 
   <section class="grid-2 feature" id="servicios">
     <div>
-      <h2 data-i18n="svc_title">Servicios</h2>
+      <h2 data-i18n="svc_title">Diensten</h2>
       <ul class="checklist">
-        <li data-i18n="svc_1"><b>Webs a medida</b> (landing, e-commerce, dashboard).</li>
-        <li data-i18n="svc_2"><b>Automatización con IA</b> (chatbots, emails, asistentes).</li>
-        <li data-i18n="svc_3"><b>Performance & SEO</b> (Core Web Vitals, esquema, metadata).</li>
-        <li data-i18n="svc_4"><b>Mantenimiento</b> (hosting, backups, mejoras).</li>
+        <li data-i18n="svc_1"><b>Maatwerk websites</b> (landing, e-commerce, dashboard).</li>
+        <li data-i18n="svc_2"><b>AI-automatisering</b> (chatbots, e-mails, assistenten).</li>
+        <li data-i18n="svc_3"><b>Performance & SEO</b> (Core Web Vitals, schema, metadata).</li>
+        <li data-i18n="svc_4"><b>Onderhoud</b> (hosting, back-ups, verbeteringen).</li>
       </ul>
       <p class="note" data-i18n="svc_note">
-        “Hecho a tu gusto, sin plantillas rígidas. Lo que imaginas, lo programamos.”
+        “Op jouw smaak gemaakt. Geen rigide templates. Wat jij bedenkt, bouwen wij.”
       </p>
     </div>
     <div class="card">
-      <h3 data-i18n="how_title">¿Cómo trabajamos?</h3>
+      <h3 data-i18n="how_title">Onze werkwijze</h3>
       <ol class="steps">
-        <li data-i18n="how_1"><b>Brief 15’</b> (objetivo y estilo).</li>
-        <li data-i18n="how_2"><b>Wireframe</b> rápido + copy IA.</li>
-        <li data-i18n="how_3"><b>Diseño vivo</b> + revisión humana.</li>
-        <li data-i18n="how_4"><b>Entrega</b> + medición (analytics).</li>
+        <li data-i18n="how_1"><b>Briefing 15’</b> (doel & stijl).</li>
+        <li data-i18n="how_2"><b>Snelle wireframe</b> + AI-copy.</li>
+        <li data-i18n="how_3"><b>Live design</b> + menselijke review.</li>
+        <li data-i18n="how_4"><b>Oplevering</b> + meting (analytics).</li>
       </ol>
     </div>
   </section>
 
   <section class="portfolio" id="portafolio" aria-labelledby="pf-title">
     <div class="list-head">
-      <h2 id="pf-title" data-i18n="pf_title">Portafolio</h2>
-      <span class="muted" data-i18n="pf_sub">Selección de proyectos reales</span>
+      <h2 id="pf-title" data-i18n="pf_title">Portfolio</h2>
+      <span class="muted" data-i18n="pf_sub">Selectie van echte projecten</span>
     </div>
     <div class="cards">
       <article class="p-card">
         <div class="thumb skeleton"></div>
-        <h3>Clínica Privada</h3>
-        <p>Landing multilingüe + chatbot de citas.</p>
+        <h3>Privékliniek</h3>
+        <p>Meertalige landing + afspraak-chatbot.</p>
       </article>
       <article class="p-card">
         <div class="thumb skeleton"></div>
         <h3>E-commerce Eco</h3>
-        <p>Tienda ligera + recomendaciones IA.</p>
+        <p>Lichte shop + AI-aanbevelingen.</p>
       </article>
       <article class="p-card">
         <div class="thumb skeleton"></div>
         <h3>Dashboard SaaS</h3>
-        <p>Panel KPI + emails automáticos.</p>
+        <p>KPI-paneel + automatische e-mails.</p>
       </article>
     </div>
   </section>
 
   <section class="pricing" id="precios">
-    <h2 data-i18n="price_title">Precios simples</h2>
+    <h2 data-i18n="price_title">Eenvoudige prijzen</h2>
     <div class="prices">
       <div class="price-card">
         <h3 data-i18n="p_basic">Starter</h3>
         <p class="price">€499</p>
         <ul>
-          <li>Landing 1-página</li>
-          <li>Copy IA + revisión</li>
-          <li>Entrega en 5-7 días</li>
+          <li>Éénpaginapagina (landing)</li>
+          <li>AI-copy + menselijke review</li>
+          <li>Oplevering in 5–7 dagen</li>
         </ul>
-        <a href="#contacto" class="btn small" data-i18n="cta_select">Elegir</a>
+        <a href="#contacto" class="btn small" data-i18n="cta_select">Kiezen</a>
       </div>
       <div class="price-card hi">
         <h3 data-i18n="p_pro">Pro</h3>
         <p class="price">€1.290</p>
         <ul>
-          <li>Web 3-5 páginas</li>
-          <li>SEO + Analytics</li>
-          <li>1 integración IA</li>
+          <li>Website van 3–5 pagina’s</li>
+          <li>SEO + Analytics ingesteld</li>
+          <li>1 AI-integratie (bijv. chatbot)</li>
         </ul>
-        <a href="#contacto" class="btn small" data-i18n="cta_select">Elegir</a>
+        <a href="#contacto" class="btn small" data-i18n="cta_select">Kiezen</a>
       </div>
       <div class="price-card">
-        <h3 data-i18n="p_custom">A medida</h3>
+        <h3 data-i18n="p_custom">Op maat</h3>
         <p class="price">€? 🤝</p>
         <ul>
-          <li>Funcionalidad específica</li>
-          <li>Integraciones a tu stack</li>
-          <li>Escalabilidad</li>
+          <li>Specifieke functionaliteit</li>
+          <li>Koppelingen met jouw stack</li>
+          <li>Schaalbaar en uitbreidbaar</li>
         </ul>
-        <a href="#contacto" class="btn small" data-i18n="cta_select">Pedir presupuesto</a>
+        <a href="#contacto" class="btn small" data-i18n="cta_select">Offerte aanvragen</a>
       </div>
     </div>
     <p class="muted center" data-i18n="price_note">
-      Precios orientativos. Facturamos en NL. IVA según normativa.
+      Richtprijzen. Facturatie in NL. BTW volgens regelgeving.
     </p>
   </section>
 
   <section class="contact" id="contacto">
     <div class="grid-2">
       <div>
-        <h2 data-i18n="ct_title">Contacto</h2>
-        <p data-i18n="ct_sub">Cuéntanos tu idea. Te mandamos una demo rápida.</p>
+        <h2 data-i18n="ct_title">Contact</h2>
+        <p data-i18n="ct_sub">Vertel je idee. We sturen een snelle demo.</p>
         <ul class="checklist">
-          <li>Respuesta en 24h</li>
-          <li>Demo navegable</li>
-          <li>Entrega clara, sin humo</li>
+          <li>Antwoord binnen 24u</li>
+          <li>Navigeerbare demo</li>
+          <li>Duidelijke oplevering, geen rook</li>
         </ul>
+        <p class="muted">
+          Snel contact? 
+          <a href="https://wa.me/31XXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a> · 
+          <a href="tel:+31XXXXXXXXX">+31 XXXXXXXXX</a> · 
+          <a href="mailto:info@jouwdomein.nl">info@jouwdomein.nl</a>
+        </p>
       </div>
-      <form class="card form" id="leadForm" aria-label="Formulario de contacto">
+
+      <!-- Formspree: reemplaza TU_CODIGO por tu endpoint real -->
+      <form class="card form" action="https://formspree.io/f/TU_CODIGO" method="POST" aria-label="Contactformulier">
         <label>
-          <span data-i18n="f_name">Nombre</span>
-          <input name="name" required placeholder="Tu nombre" />
+          <span data-i18n="f_name">Naam</span>
+          <input id="name" name="name" required placeholder="Jouw naam" autocomplete="name" />
         </label>
         <label>
           <span>Email</span>
-          <input type="email" name="email" required placeholder="tu@email.com" />
+          <input id="email" type="email" name="email" required placeholder="jij@email.com" autocomplete="email" />
         </label>
         <label>
-          <span data-i18n="f_msg">Proyecto</span>
-          <textarea name="message" rows="4" placeholder="¿Qué necesitas?"></textarea>
+          <span data-i18n="f_msg">Project</span>
+          <textarea id="message" name="message" rows="4" placeholder="Wat heb je nodig?"></textarea>
         </label>
-        <button type="submit" class="btn" data-i18n="f_send">Enviar</button>
-        <p id="formStatus" role="status" class="muted"></p>
+
+        <!-- anti-spam -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <!-- redirect -->
+        <input type="hidden" name="_redirect" value="https://ictAmine.github.io/50h50ai_site/gracias.html" />
+
+        <button type="submit" class="btn" data-i18n="f_send">Verzenden</button>
       </form>
     </div>
   </section>
 
   <footer class="foot">
     <p>© <span id="year"></span> 50/50 Web Studio — 
-      <span data-i18n="foot_line">Hecho con café y algoritmos.</span>
+      <span data-i18n="foot_line">Gemaakt met koffie en algoritmen.</span>
+      · KvK: 00000000 · BTW: NL001234567B01
     </p>
   </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-fab" href="https://wa.me/31XXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp chat">
+    <span>WhatsApp</span>
+  </a>
 </body>
 </html>
